@@ -14,80 +14,120 @@
   -webkit-text-size-adjust: 100%;
 }
 
-*{ 
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+body{
+  padding: 0;
+  margin: 0;
+}
 
-.main-nav{
+.main-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
+  /* overflow-block: auto; REVISAR LO DEL STIKI PARA QUE SIEMPRE ESTE ARRIBA */
 }
-.children-nav{
+
+.children-nav {
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
+.img-nav {
+  width: 32px;
+  height: 32px;
+  justify-content: left;
+}
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-a:hover{
+a:hover {
   text-transform: uppercase;
-  
-}
-section{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  
 }
 
-section > div{
+
+
+section {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  
-}
+  }
 
-.first-pack{
+.first-pack, .second-pack{
   display: flex;
   margin: 15px;
   padding: 15px;
   justify-content: space-around;
-  
 }
-p{
+
+.first-text {
+  font-size: x-large;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: right;
+  align-items:center;
+  padding: 32px;
 }
-
-.img-nav{
-  width: 16px;
-  height: 16px;
-
-}
-
-img{
-  width: 300px;
-  height: 300px;
+.second-text {
+  font-size: x-large;
+  display: flex;
+  justify-content: right;
+  align-items:center;
+  padding: 32px;
 }
 
 .first-img{
-  display: inline-block;
-  justify-content: center;
+  justify-content: right;
+}
+.second-img{
+  justify-content: left;
 }
 
-/*para el dia 08/02 tengo que terminar los display flex y la estructura de la 
-app */
+
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 17px;
+
+}
+
+
+/* -----CARTA NO TOCAR-------- */
+.card {
+  box-sizing: border-box;
+  
+  
+  
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+}
+
+.card:hover {
+  
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
 
 /* @media (prefers-color-scheme: light) {
   :root {
