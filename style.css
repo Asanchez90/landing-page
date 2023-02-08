@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{ 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.children-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-transform: uppercase;
+  
+}
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+section > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.first-pack{
+  display: flex;
+  margin: 15px;
+  padding: 15px;
+  justify-content: space-around;
+  
+}
+p{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-nav{
+  width: 16px;
+  height: 16px;
+
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+.first-img{
+  display: inline-block;
+  justify-content: center;
+}
+
+/*para el dia 08/02 tengo que terminar los display flex y la estructura de la 
+app */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
