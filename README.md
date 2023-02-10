@@ -1,5 +1,5 @@
 #No se de que voy a hacer el proyecto ni nada por el estilo pero bueno... no sé colores, tipografia, fotos... NADA pero poco a poco.
-07/02-08/02
+06/02-08/02
 1.- Desarrollo de la estructura de la pagina web, empezando por el nav (logo, secciones....) ✔
 
 2.- Creación de una carta junto con su correspondiente informacion a su derecha e izquierda respectivamente. ✔
@@ -18,6 +18,21 @@
 
 5.- Poner el NAV fijo para que siempre me permita navegar por la pagina.
     -Editar nav para @media poniendo el estilo hamgursesa.
+
+10-02
+-He añadido padding al h2 (service) y he puesto el main nav fijo, posible restructuracion de ello en las demas paginas.✔
+-He añadido id a todos las secciones haciendo referencia con el nav, asi que cuando alguien hace click en el nav le lleva al sitio referido.✔
+-Organizacion del nav de servicios con respecto a lo enseñado en las secciones de html.✔
+-Organizacion del CSS.✔
+-Creacion de cada seccion (html y css) y anexado con sus principales ✔
+    -anexado html y css ✔
+-He quitado la pagina web precios. ✔
+    -revisar y eliminar la pagina precios.
+11-02
+-Quitar a todos los <h2> el <a> y meterle por CSS un hover
+-Crear una nueva seccion para sustituir "precios"
+    -revisar y eliminar la pagina precios.
+-"PRETROLEAR EL MOTOR DEL VEHICULO"
 
 
 

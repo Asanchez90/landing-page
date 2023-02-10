@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color:  rgb(60, 59, 59);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,9 +20,23 @@
   padding: 0;
   margin: 0;
 }
+/* header{
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 10; */
+/* } */
+
 body{
   padding: 0;
   margin: 0;
+}
+/* HEADER Y NAV */
+header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .main-nav {
@@ -37,6 +52,7 @@ body{
   justify-content: space-around;
   padding: 10px;
 }
+
 .img-nav {
   width: 32px;
   height: 32px;
@@ -50,20 +66,41 @@ a {
 
 a:hover {
   text-transform: uppercase;
+  transform: scale(1.25);
+  
+  transition: all 0.5s;
+}
+a:active{
+  transform: scale(0.95);
+  transform: scaleZ(1);
 }
 
 /* SECCION Y H2 */
-section, h2 {
+section{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 32px;
+  justify-content: space-between;
+  
+  }
+
+h2 {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
+  padding-top: 48px;
+  justify-content: space-around;
+
   }
 
 .first-pack, .second-pack{
   display: flex;
-  margin: 15px;
-  padding: 15px;
-  justify-content: space-around;
+  margin: 16px;
+  padding: 16px;
+  justify-content: space-evenly;
+  width: 100vw;
 }
 
 .first-text {
@@ -90,24 +127,25 @@ section, h2 {
 
 .first-img{
   justify-content: right;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
 }
 .second-img{
   justify-content: left;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
 }
 
 img {
   width: 400px;
   height: 350px;
-  border-radius: 17px;
+  border-radius: 20px;
 }
 
-.structure-article{
-display: flex;
-flex-direction: row;
-justify-content: center;
 
-}
-/* -----BOTON NO TOCAR-------- */
+/* -----BOTON SERVICIOS NO TOCAR-------- */
 .bt-inf{
   height: 32px;
   padding: 10px;
@@ -117,27 +155,40 @@ justify-content: center;
   transition: all 0.5s;
   position: relative;
   row-gap: 8px;
-  }
+  
+}
 
 .bt-inf:hover {
   transform: scale(1.05);
-  }
-  
+}
+
 .bt-inf:active {
   transform: scale(0.95) ;
 } 
-button{
+.bt-inf{
   border-radius: 10px;
 }
-button > a {
+.bt-inf > a {
   color: black;
 }
 
+/* .structure-article{
+display: flex;
+flex-direction: row;
+justify-content: center;
+} */
+
+.structure-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
 
 /* -----CARTA NO TOCAR-------- */
 .card {
-  box-sizing: border-box;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  /* box-sizing: border-box; */
+  box-shadow: 12px 17px 51px rgba(245, 241, 241, 0.791);
+  border-radius: 20px;
   backdrop-filter: blur(6px);
   text-align: center;
   cursor: pointer;
@@ -147,6 +198,7 @@ button > a {
   justify-content: center;
   user-select: none;
   font-weight: bolder;
+  
 }
 
 .card:hover {
@@ -154,18 +206,22 @@ transform: scale(1.05);
 }
 
 .card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+  transform: scale(0.95);
 }
 
 /* -----OL NO TOCAR-------- */
 .list-direction{
+  font-size: 20px;
   display: flex;
-  padding: 15px;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 30px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 100px;
+  font-style:italic;
 }
+
+/* ------referencias------- */
 
 
 
