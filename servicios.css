@@ -65,13 +65,13 @@
   
   a:hover {
     text-transform: uppercase;
-    transform: scale(1.25);
+    transform: scale(1.0);
     
     transition: all 0.5s;
   }
   a:active{
     transform: scale(0.95);
-    transform: scaleZ(3);
+    transform: scaleZ(1);
   }
   
   /* SECCION Y H2 */

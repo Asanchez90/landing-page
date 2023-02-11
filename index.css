@@ -67,7 +67,6 @@ a {
 a:hover {
   text-transform: uppercase;
   transform: scale(1.25);
-  
   transition: all 0.5s;
 }
 a:active{
@@ -92,7 +91,6 @@ h2 {
   justify-content: center;
   padding-top: 48px;
   justify-content: space-around;
-
   }
 
 .first-pack, .second-pack{
@@ -122,9 +120,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items:center;
-  padding: 16px;
+  
 }
-
+ 
 .first-img{
   justify-content: right;
   width: 400px;
