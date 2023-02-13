@@ -29,19 +29,20 @@
 -He quitado la pagina web precios. ✔
 
 11-02
-- Quitar a todos los <h2> el <a> y meterle por CSS un hover (medio hecho)
-- Crear una nueva seccion para sustituir "precios" (medio hecho)✔
+- Quitar a todos los <h2> el <a> y meterle por CSS un hover 
+- Crear una nueva seccion para sustituir "precios" ✔
     -revisar y eliminar la pagina precios.✔
-
-- Quitar escalado del main nav, se me pegan entre sin, darle un poco de padding entre ellos. (medio hecho)
+- Quitar escalado del main nav, se me pegan entre sin, darle un poco de padding entre ellos.✔
 - Quitar el efecto zoom en todos los h2 dentro de la pagina y tal... (hecho)
-- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios.
-    -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado.
 
 13-02
-- Rehacer lo del dia 11-02
-- Empezado pagina productos, terminar de maquetar
-- Corregir diseño (no todos los div tienen el mismo tamaño, caparlos y ponerlo todos iguales.)
+
+- Empezado pagina productos, terminar de maquetar ✔
+- Corregir diseño (no todos los div tienen el mismo tamaño, caparlos y ponerlo todos iguales.) ✔
+- Quitar a todos los <h2> el <a> y meterle por CSS un hover 
+- Quitar escalado del main nav, se me pegan entre sin, darle un poco de padding entre ellos. (medio hecho)
+- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios.
+    -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado.
 
 
 
@@ -54,7 +55,7 @@
 - [✔]  La web cuenta con al menos un elemento `header` o un elemento `footer` para contenido de navegación o adicional.
 - [✔]  Hay al menos un elemento de tipo `ul` o de tipo `ol` con varios productos enumerados.
 - [✔]  La web tendrá imágenes para al menos 10 productos, puedes copiar su URL de la web original haciendo `click derecho > abrir imagen en nueva pestaña > copia la URL de la imagen` o con el inspector del navegador.
-- [ ]  La web contendrá links `a` que apunten a los productos originales, recuerda usar `rel="noopener"` para añadir links a webs externas.
+- [✔]  La web contendrá links `a` que apunten a los productos originales, recuerda usar `rel="noopener"` para añadir links a webs externas.
 
 **Criterios CSS**
 
@@ -64,4 +65,5 @@
     - [ ]  Punto adicional si haces la web adecuada para tablet, entre los rangos de `375px y 768px`.
 - [ ]  Existen **variables de CSS** para los colores y tamaños más utilizados.
 - [✔]  Se ha configurado el texto para definir estilos generales para los `h1, h2, h3, p, span`.
-    - [ ]  Punto adicional si ha cargado fuentes de [Google Fonts](https://fonts.google.com/).
+    - [✔]  Punto adicional si ha cargado fuentes de [Google Fonts](https://fonts.google.com/).
+    - revisar ultimo punto

@@ -1,15 +1,16 @@
-:root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+  :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424;
+  background-color:  rgb(60, 59, 59); */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
   }
   
 * {
@@ -22,12 +23,12 @@
 body{
   padding: 0;
   margin: 0;
-  height: 20000px;
+  height: 2000px;
 }
    
   /* HEADER Y NAV */
 header {
-  background-color: black;
+  background-color: transparent;
   width: 100%;
   /* position: fixed; */
   z-index: 10;
@@ -82,10 +83,9 @@ h1{
   );
   background-clip: text;
   -webkit-background-clip: text;
-  
   text-align: center;
-  padding: 25px;
-  margin: 50px; 
+  padding: 20px;
+  margin: 20px; 
   overflow: hidden;
 }
 
@@ -93,7 +93,8 @@ h1{
 /* creacion de galeria  */
 
 img{
-width: 100%;
+width: 50%;
+
 }
 
 .gallery-container {
@@ -109,16 +110,19 @@ width: 100%;
   justify-content:center;
   align-items: center;
   max-width: 25%;
+  max-height: 30%;
   padding: 0 4px;
   flex-wrap: wrap;
-  
+  margin-top: 20px;
 }
 
 .colum img{
-    vertical-align: middle;
-    padding: 10px;
-    margin-top: 8px;
-    filter: grayscale(70%);
+  vertical-align: middle;
+  padding: 10px;
+  margin-top: 8px;
+  /* filter: grayscale(70%); */
+  border-radius: 25px;
+  
 }
 
 /* boton de precio  */
@@ -132,6 +136,7 @@ width: 100%;
   font-size: 16px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
  }
  
  button div {
@@ -148,11 +153,12 @@ width: 100%;
 /* texto debajo imagen */
 p{
   padding: 5px;
-  width: 260px;
-  font-size-adjust: auto;
+  max-width: 260px;
+  /* font-size-adjust: auto; */
   display: flex;
   justify-content: center;
 }
+
 
 
 /* @media screen and (max-width:800px) {
@@ -173,118 +179,3 @@ p{
 
 
 
-
-
-
-
-  
-  /* -----BOTON SERVICIOS NO TOCAR-------- */
-  /* .bt-inf{
-    height: 32px;
-    padding: 10px;
-    border: 2px solid grey;
-    background-color: white;
-    color: black;
-    transition: all 0.5s;
-    position: relative;
-    row-gap: 8px;
-    
-  }
-  
-  .bt-inf:hover {
-    transform: scale(1.05);
-  }
-  
-  .bt-inf:active {
-    transform: scale(0.95) ;
-  } 
-  .bt-inf{
-    border-radius: 10px;
-  }
-  .bt-inf > a {
-    color: black;
-  }
-  
-  /* .structure-article{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  } */
-  
-  .structure-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  } */
-  
-  /* -----CARTA NO TOCAR-------- */
-  /* .card {
-    box-sizing: border-box;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    
-  }
-  
-  .card:hover {
-  transform: scale(1.05);
-  }
-  
-  .card:active {
-    transform: scale(0.95);
-  }
-   */
-  /* -----OL NO TOCAR-------- */
-  .list-direction{
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    font-style:italic;
-  }
-  
-  /* ------referencias------- */
-  
-  
-  
-  /* -----buttons------ */
-  /* .CTA-info{
-    flex-direction: row;
-    row-gap: 8px;
-    justify-content: center;
-    align-items: end;
-  } */
-  
-  img{
-  width: 250px;
-  height: 250px;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-.colum {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.colum img{
-    vertical-align: middle;
-    margin-top: 8px;
-    filter: grayscale(70%);
-}
-
-  
