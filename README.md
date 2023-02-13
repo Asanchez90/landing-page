@@ -30,14 +30,18 @@
 
 11-02
 - Quitar a todos los <h2> el <a> y meterle por CSS un hover (medio hecho)
-- Crear una nueva seccion para sustituir "precios" (medio hecho)
-    -revisar y eliminar la pagina precios.
-- "PRETROLEAR EL MOTOR DEL VEHICULO" (añadir con mi padre)
+- Crear una nueva seccion para sustituir "precios" (medio hecho)✔
+    -revisar y eliminar la pagina precios.✔
+
 - Quitar escalado del main nav, se me pegan entre sin, darle un poco de padding entre ellos. (medio hecho)
 - Quitar el efecto zoom en todos los h2 dentro de la pagina y tal... (hecho)
 - Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios.
     -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado.
 
+13-02
+- Rehacer lo del dia 11-02
+- Empezado pagina productos, terminar de maquetar
+- Corregir diseño (no todos los div tienen el mismo tamaño, caparlos y ponerlo todos iguales.)
 
 
 
