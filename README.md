@@ -48,9 +48,10 @@
 - Meter 8 productos mas. ✔
 - Quitar a todos los <h2> el <a> ✔
 - Quitar escalado del main nav, se me pegan entre si, darle un poco de padding entre ellos.✔
-- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios.
-    -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado. (hecho).
+- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios. ✔
+    -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado. (hecho).✔
 - Plantear @media en ipad y movil.
+- estilado CSS generales.
 
 
 

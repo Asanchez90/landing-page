@@ -45,6 +45,13 @@
     align-items: center;
     background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
   }
+  .segundo-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(248, 247, 246, 0.5), rgba(243, 243, 247, 0.91));
+  }
   
   .children-nav {
     display: flex;
