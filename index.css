@@ -229,6 +229,23 @@ transform: scale(1.05);
   align-items: end;
 } */
 
+/* media querys */
+/* @media screen and (max-width:768px) {
+  .main-nav{
+  flex: 50%;
+  max-width: 50%;        
+  }
+}
+
+@media screen and (max-width:375px) {
+  .colum{
+  flex: 100%;
+  max-width: 100%;        
+  }
+} */
+
+
+
 
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -242,3 +259,34 @@ transform: scale(1.05);
     background-color: #f9f9f9;
   }
 } */
+
+
+.block {
+  background-color: white;
+  /*   Añadimos flex a cada bloque en escritorio y un margin bottom para que se separen y verlos espaciados */
+  display: flex;
+  margin-bottom: 24px;
+}
+
+/* Los blocks que sea pares (2, 4, 6...) tendrán una dirección distinta para dar dinamismo a la web */
+.block:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.block > img {
+  max-width: 600px;
+}
+
+/* Cuando la pantalla es menos a 960px de ancho, los block se convierten en display: block, mostrando en contenido en columna automaticamente como funciona CSS por defecto */
+@media screen and (max-width: 960px) {
+  .block {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .block > img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

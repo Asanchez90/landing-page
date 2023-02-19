@@ -53,8 +53,11 @@
 - Plantear @media en ipad y movil.
 - estilado CSS generales.
 
-
-
+19-02
+- ya que voy a reestructurarlo, hacerlo de acuerdo a las enseñanzas con movil-ipad-pc
+- Reestructurar arquitectura del proyecto a nivel general.
+- Restablecer las @media con las etiquetas pares (sustituir por "first-pack" and "second-pack")
+- Reestructurar TODAS las secciones de todas las paginas. 
 
 
 
