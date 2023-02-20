@@ -17,6 +17,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 /* header{
   background: transparent;
@@ -28,6 +29,7 @@
 body{
   padding: 0;
   margin: 0;
+  height: auto;
 }
 /* HEADER Y NAV */
 header {
@@ -38,6 +40,13 @@ header {
 }
 
 .main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
+}
+  .footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -141,8 +150,9 @@ img {
 }
 
 
+
 /* -----BOTON SERVICIOS NO TOCAR-------- */
-.bt-inf{
+/* .bt-inf{
   height: 32px;
   padding: 10px;
   border: 2px solid grey;
@@ -172,20 +182,17 @@ img {
 display: flex;
 flex-direction: row;
 justify-content: center;
-} */
+} 
 
 .structure-btn{
 display: flex;
 flex-direction: row;
 justify-content: center;
-}
+} */
 
 /* -----CARTA NO TOCAR-------- */
 .card {
-  /* box-sizing: border-box; */
-  box-shadow: 12px 17px 51px rgba(245, 241, 241, 0.791);
-  border-radius: 20px;
-  backdrop-filter: blur(6px);
+  
   text-align: center;
   cursor: pointer;
   transition: all 0.5s;
@@ -245,24 +252,8 @@ transform: scale(1.05);
 } */
 
 
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-
 .block {
-  background-color: white;
+  background-color: rgb(60, 59, 59);
   /*   Añadimos flex a cada bloque en escritorio y un margin bottom para que se separen y verlos espaciados */
   display: flex;
   margin-bottom: 24px;
@@ -279,6 +270,7 @@ transform: scale(1.05);
 
 /* Cuando la pantalla es menos a 960px de ancho, los block se convierten en display: block, mostrando en contenido en columna automaticamente como funciona CSS por defecto */
 @media screen and (max-width: 960px) {
+  
   .block {
     display: block;
     margin-bottom: 0;
@@ -289,4 +281,18 @@ transform: scale(1.05);
     width: 100%;
     margin: 0 auto;
   }
+}
+@media screen and (max-width: 390px) {
+  
+  .block {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .block > img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
 }

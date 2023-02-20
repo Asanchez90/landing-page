@@ -41,7 +41,7 @@
 - Corregir diseño (no todos los div tienen el mismo tamaño, caparlos y ponerlo todos iguales.) ✔
 - Quitar a todos los <h2> el <a>  ✔
 - Quitar escalado del main nav, se me pegan entre si, darle un poco de padding entre ellos.✔
-- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios.
+- Añadir main navbar en la seccion de servicios y debajo pongo la navbar de servicios. ✔
     -dar un poco de padding a esto para que cuando se me ponga el uppercase no se me pegue con el de al lado.
 
 14-02
@@ -59,6 +59,12 @@
 - Restablecer las @media con las etiquetas pares (sustituir por "first-pack" and "second-pack")
 - Reestructurar TODAS las secciones de todas las paginas. 
 
+20-02
+- Plantear @media en ipad y movil.
+    - Inicio ✔
+    - Servicios
+    - Productos ✔
+    
 
 
 

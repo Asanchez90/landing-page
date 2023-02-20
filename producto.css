@@ -23,7 +23,7 @@
 body{
   padding: 0;
   margin: 0;
-  height: 2000px;
+  
 }
    
   /* HEADER Y NAV */
@@ -52,6 +52,7 @@ header {
   width: 32px;
   height: 32px;
   justify-content: left;
+  border-radius: 20px;
 }
 
 a {
@@ -161,19 +162,30 @@ p{
 
 
 
-/* @media screen and (max-width:800px) {
-    .colum{
-    flex: 50%;
-    max-width: 50%;        
-    }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
     .colum{
     flex: 100%;
     max-width: 100%;        
     }
-} */
+  h1{
+    font-size: 100px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width:390px) {
+    .colum{
+    flex: 100%;
+    max-width: 100%;        
+    }
+    h1{
+      font-size: 40px;
+      font-weight: 600;
+    }
+    header{
+      font-size: 12px;
+    }
+}
 
 
 

@@ -2,11 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(60, 59, 59);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,12 +16,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-header {
-  background: transparent;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
+  
 }
 
 body {
@@ -32,6 +25,7 @@ body {
 }
 /* HEADER Y NAV */
 header {
+  background: transparent;
   background-color: black;
   width: 100%;
   position: fixed;
@@ -101,7 +95,7 @@ h2 {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 150px;
   justify-content: space-around;
 }
 
@@ -240,7 +234,8 @@ img {
   } */
 
 /* media querys */
-@media screen and (max-width: 1024px) {
+
+ @media screen and (max-width: 1024px) {
   .main-nav {
     flex-wrap: wrap;
     flex: 50%;
@@ -278,40 +273,55 @@ img {
     height: 350px;
     border-radius: 20px;
   }
-}
 
-@media screen and (max-width: 375px) {
-  .main-nav {
-    flex-wrap: wrap;
-    
-    max-width: 100%;
-  }
-  .segundo-nav {
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-items: auto;
-    align-self: auto;
-  }
-  .first-pack {
+  .block {
+    background-color: rgb(60, 59, 59);
+
+  /*   Añadimos flex a cada bloque en escritorio y un margin bottom para que se separen y verlos espaciados */
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin-bottom: 24px;
   }
+
+  /* Los blocks que sea pares (2, 4, 6...) tendrán una dirección distinta para dar dinamismo a la web */
+  .block:nth-child(odd) {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .block > img {
+    max-width: 600px;
+    }
 }
 
-/* @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    button {
-      background-color: #f9f9f9;
-    }
-  } */
+/* Cuando la pantalla es menos a 960px de ancho, los block se convierten en display: block, mostrando en contenido en columna automaticamente como funciona CSS por defecto */
+@media screen and (max-width: 960px) {
+  .block {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .block > img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .block:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+}
 
 
-  
-  
+/* @media screen and (max-width: 320px) {
+ 
+  .block {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .block > img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+} */
