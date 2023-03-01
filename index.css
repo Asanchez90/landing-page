@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  /* background-color:  rgba(14, 13, 13, 0.88); */
+  /* background-color:  rgba(14, 13, 13, 0.88); este color podría ser para la otra paleta de color que tenia pensado*/
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,14 +17,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
   height: auto;
-  
 }
 /* HEADER Y NAV */
 header {
@@ -34,40 +32,28 @@ header {
   position: fixed;
   z-index: 10;
 }
-h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 100px;
-  font-weight: 600;
-  color: transparent;
-  letter-spacing: -0.015em;
-  background-image:linear-gradient(
-    180deg,
-     blue,
-     grey
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-align: center;
-  padding-top: 100px;
-  overflow: hidden;
-  }
 
 .main-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
+  background-image: linear-gradient(
+    rgba(27, 27, 243, 0.5),
+    rgba(248, 247, 246, 0.5)
+  );
   font-size: 16px;
 }
-
-  .footer-nav {
+.footer-nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
+  background-image: linear-gradient(
+    rgba(27, 27, 243, 0.5),
+    rgba(248, 247, 246, 0.5)
+  );
   font-size: 16px;
 }
 .img-nav {
@@ -81,12 +67,10 @@ h1{
   padding: 10px;
 }
 
-
 a {
   text-decoration: none;
   color: white;
 }
-
 a:hover {
   text-transform: uppercase;
   transform: scale(1);
@@ -97,56 +81,67 @@ a:hover {
   transform: scaleZ(1);
 } */
 
+/* h1 estilo apple  */
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: transparent;
+  letter-spacing: -0.015em;
+  background-image: linear-gradient(180deg, blue, grey);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
 /* SECCION Y H2 */
-section{
+section {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 32px;
   justify-content: space-between;
-  }
-
-.first-pack, .second-pack{
+}
+.first-pack,
+.second-pack {
   width: 100%;
   display: flex;
   margin: 16px;
   padding: 16px;
   justify-content: space-evenly;
 }
-
-
-
 .first-text {
   font-size: 32px;
   display: flex;
   justify-content: left;
-  align-items:center;
+  align-items: center;
   padding: 16px;
 }
 .second-text {
   font-size: 32px;
   display: flex;
   justify-content: right;
-  align-items:center;
+  align-items: center;
   padding: 16px;
 }
-.info-servicios{
+.info-servicios {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   padding-top: 48px;
   justify-content: space-around;
 }
- 
-.first-img{
+.first-img {
   justify-content: left;
   width: 400px;
   height: 350px;
   border-radius: 20px;
 }
-.second-img{
+.second-img {
   justify-content: right;
   width: 400px;
   height: 350px;
@@ -159,9 +154,8 @@ img {
   border-radius: 20px;
 }
 
-/* -----CARTA NO TOCAR-------- */
+/* -----CARTA -------- */
 .card {
-  
   text-align: center;
   cursor: pointer;
   transition: all 0.5s;
@@ -170,19 +164,13 @@ img {
   justify-content: center;
   user-select: none;
   font-weight: bolder;
-  
 }
-
 .card:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* .card:active {
-  transform: scale(0.95);
-} */
-
-/* -----OL NO TOCAR-------- */
-.list-direction{
+/* -----lista -------- */
+.list-direction {
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -190,12 +178,11 @@ transform: scale(1.05);
   justify-content: center;
   align-items: center;
   gap: 100px;
-  font-style:italic;
+  font-style: italic;
 }
 
-/* ------referencias------- */
+/* ------@media querys------- */
 @media screen and (max-width: 960px) {
-  
   .first-pack {
     display: flex;
     flex-direction: column;
@@ -203,7 +190,7 @@ transform: scale(1.05);
     padding: 16px;
     justify-content: space-evenly;
   }
-  .second-pack{
+  .second-pack {
     display: flex;
     flex-direction: column-reverse;
     margin: 16px;
@@ -211,62 +198,55 @@ transform: scale(1.05);
     justify-content: space-evenly;
   }
 
-  h1{
+  h1 {
     font-size: 50px;
     padding-top: 100px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  
   .first-pack {
     padding: top 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .second-pack{
+  .second-pack {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
   }
-  .info-servicios{
+  .info-servicios {
     font-size: 24px;
   }
-  .first-text{
+  .first-text {
     font-size: 12px;
   }
-  .second-text{
+  .second-text {
     font-size: 12px;
   }
-  h1{
+  h1 {
     font-size: 50px;
     padding-top: 80px;
   }
-  img{
+  img {
     width: 80%;
     height: 100%;
   }
-  .first-img{
-    
-    width: 80%;
-    height: 100%;
-    border-radius: 20px;
-  }
-  .second-img{
-    
+  .first-img {
     width: 80%;
     height: 100%;
     border-radius: 20px;
   }
- 
-  .footer-nav{
+  .second-img {
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .footer-nav {
     font-size: 10px;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
-
-  
 }
-

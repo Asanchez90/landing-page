@@ -1,10 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: rgb(60, 59, 59); */
+  /* background-color: rgb(60, 59, 59 este color podría ser para la otra paleta de color que tenia pensado); */
   background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,9 +50,8 @@ header {
   align-items: center;
   background-image: linear-gradient(
     rgba(248, 247, 246, 0.947),
-    rgba(24,24,24,0.05)
-  );   
-  
+    rgba(24, 24, 24, 0.05)
+  );
 }
 
 .children-nav {
@@ -83,6 +82,21 @@ a:active {
   transform: scaleZ(1);
 }
 
+/* h1 estilo apple  */
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 130px;
+  font-weight: 600;
+  color: transparent;
+  letter-spacing: -0.015em;
+  background-image: linear-gradient(180deg, blue, grey);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
 /* SECCION Y H2 */
 section {
   display: flex;
@@ -91,24 +105,6 @@ section {
   padding-top: 32px;
   justify-content: space-between;
 }
-h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 130px;
-  font-weight: 600;
-  color: transparent;
-  letter-spacing: -0.015em;
-  background-image:linear-gradient(
-    180deg,
-     blue,
-     grey
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-align: center;
-  padding-top: 100px;
-  overflow: hidden;
-}
-
 .first-pack {
   display: flex;
   margin: 16px;
@@ -134,7 +130,6 @@ h1{
   padding: 16px;
   margin: 10px;
   font-size: 40px;
-
 }
 
 img {
@@ -142,7 +137,6 @@ img {
   height: 350px;
   border-radius: 17px;
 }
-
 
 /* -----BOTON SERVICIOS NO TOCAR-------- */
 .bt-inf {
@@ -198,7 +192,7 @@ img {
   transform: scale(0.95);
 }
 
-/* -----OL NO TOCAR-------- */
+/* -----lista -------- */
 .list-direction {
   font-size: 20px;
   display: flex;
@@ -210,12 +204,9 @@ img {
   font-style: italic;
 }
 
-/* ------referencias------- */
+/* ------@media querys------- */
 
-
-/* media querys */
-
- @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .main-nav {
     flex-wrap: wrap;
     flex: 50%;
@@ -227,22 +218,20 @@ img {
     max-width: 50%;
     justify-items: auto;
     align-self: auto;
-    
   }
   .first-pack {
     display: flex;
     flex-wrap: wrap;
-  } 
-  
+  }
+
   .block {
     display: flex;
     margin-bottom: 24px;
-  } 
+  }
   .block > img {
     max-width: 70%;
-    }
+  }
 }
-
 
 @media screen and (max-width: 960px) {
   .block {
@@ -250,42 +239,36 @@ img {
     flex-direction: column;
     margin-bottom: 0;
   }
-
   .block > img {
     display: block;
     width: 50%;
     margin: 0 auto;
   }
-  
-} 
+}
 
 @media screen and (max-width: 375px) {
- 
   .block {
     display: block;
     width: 100%;
     margin: 0 auto;
   }
-
   .block > img {
     display: block;
-    
-  } 
-  img{
+  }
+  img {
     width: 300px;
     height: 200px;
   }
-  h1{
+  h1 {
     font-size: 50px;
     padding-top: 150px;
   }
-  .info-servicios{
+  .info-servicios {
     font-size: 30px;
   }
-  .first-text{
+  .first-text {
     font-size: 20px;
   }
-
   .segundo-navbar {
     display: flex;
     flex-direction: row;
