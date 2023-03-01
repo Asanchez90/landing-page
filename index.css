@@ -24,6 +24,7 @@ body{
   padding: 0;
   margin: 0;
   height: auto;
+  
 }
 /* HEADER Y NAV */
 header {
@@ -35,7 +36,7 @@ header {
 }
 h1{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 130px;
+  font-size: 100px;
   font-weight: 600;
   color: transparent;
   letter-spacing: -0.015em;
@@ -49,7 +50,7 @@ h1{
   text-align: center;
   padding-top: 100px;
   overflow: hidden;
-}
+  }
 
 .main-nav {
   display: flex;
@@ -61,11 +62,13 @@ h1{
 }
 
   .footer-nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(27, 27, 243, 0.5), rgba(248, 247, 246, 0.5));
+  font-size: 16px;
 }
 .img-nav {
   width: 32px;
@@ -96,6 +99,7 @@ a:hover {
 
 /* SECCION Y H2 */
 section{
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -103,20 +107,20 @@ section{
   justify-content: space-between;
   }
 
-
-
 .first-pack, .second-pack{
+  width: 100%;
   display: flex;
   margin: 16px;
   padding: 16px;
   justify-content: space-evenly;
-  /* width: 100vw; */
 }
+
+
 
 .first-text {
   font-size: 32px;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items:center;
   padding: 16px;
 }
@@ -137,13 +141,13 @@ section{
 }
  
 .first-img{
-  justify-content: right;
+  justify-content: left;
   width: 400px;
   height: 350px;
   border-radius: 20px;
 }
 .second-img{
-  justify-content: left;
+  justify-content: right;
   width: 400px;
   height: 350px;
   border-radius: 20px;
@@ -154,47 +158,6 @@ img {
   height: 350px;
   border-radius: 20px;
 }
-
-
-
-/* -----BOTON SERVICIOS NO TOCAR-------- */
-/* .bt-inf{
-  height: 32px;
-  padding: 10px;
-  border: 2px solid grey;
-  background-color: white;
-  color: black;
-  transition: all 0.5s;
-  position: relative;
-  row-gap: 8px;
-  
-}
-
-.bt-inf:hover {
-  transform: scale(1.05);
-}
-
-.bt-inf:active {
-  transform: scale(0.95) ;
-} 
-.bt-inf{
-  border-radius: 10px;
-}
-.bt-inf > a {
-  color: black;
-}
-
-/* .structure-article{
-display: flex;
-flex-direction: row;
-justify-content: center;
-} 
-
-.structure-btn{
-display: flex;
-flex-direction: row;
-justify-content: center;
-} */
 
 /* -----CARTA NO TOCAR-------- */
 .card {
@@ -231,41 +194,79 @@ transform: scale(1.05);
 }
 
 /* ------referencias------- */
-
-
-
-/* -----buttons------ */
-/* .CTA-info{
-  flex-direction: row;
-  row-gap: 8px;
-  justify-content: center;
-  align-items: end;
-} */
-
 @media screen and (max-width: 960px) {
   
-  .block {
-    display: block;
-    margin-bottom: 0;
+  .first-pack {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+    justify-content: space-evenly;
+  }
+  .second-pack{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 16px;
+    padding: 16px;
+    justify-content: space-evenly;
   }
 
-  .block > img {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+  h1{
+    font-size: 50px;
+    padding-top: 100px;
   }
-
 }
-@media screen and (max-width: 390px) {
+
+@media screen and (max-width: 375px) {
+  
+  .first-pack {
+    padding: top 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .second-pack{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .info-servicios{
+    font-size: 24px;
+  }
+  .first-text{
+    font-size: 12px;
+  }
+  .second-text{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 50px;
+    padding-top: 80px;
+  }
+  img{
+    width: 80%;
+    height: 100%;
+  }
+  .first-img{
+    
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .second-img{
+    
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+  }
  
-  .block {
-    display: block;
-    margin-bottom: 0;
+  .footer-nav{
+    font-size: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   
-  .block > img {
-    display: block;
-    /* width: 100%; */
-    margin: 0 auto;
-  }
+
+  
 }
+

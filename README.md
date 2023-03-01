@@ -62,9 +62,10 @@
 20-02
 - Plantear @media en ipad y movil.
     - Inicio ✔
-    - Servicios
+    - Servicios ✔
     - Productos ✔
     
+
 
 
 
